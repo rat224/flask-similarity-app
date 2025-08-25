@@ -49,10 +49,8 @@ def compare_texts():
 
         # 4. Format response
         return jsonify({
-            "audio_text": audio_text,
-            "file_text": file_text,
-            "result_json": result_json,
-            "similarity": similarity
+            "cosine": result["scores"]["cosine"],
+            "similarity": result["similarity"]
         })
 
     except Exception as e:
