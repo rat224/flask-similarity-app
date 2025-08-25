@@ -47,10 +47,10 @@ def compare_texts():
             api_name="/_on_click"
         )
 
-        # 4. Format response
+        # 4. Return only similarity score
         return jsonify({
-            "cosine": result["scores"]["cosine"],
-            "similarity": result["similarity"]
+            "cosine": result_json["scores"]["cosine"],
+            "similarity": result_json["similarity"]
         })
 
     except Exception as e:
