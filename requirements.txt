@@ -3,3 +3,4 @@ gradio_client
 langdetect
 python-docx
 PyPDF2
+gunicorn
